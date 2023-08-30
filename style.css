@@ -1,22 +1,21 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: green;
+    background: var(--light-blue-light-blue-100, #F3F5FC);;
 }
 
 main{
-    margin: auto;
-    width: 960px;
-    height: 650px;
-    padding: 5px;
-    background: blue;
+    width: 1440px;
+    height: 1024px;
+    padding: 1px;
 }
 
 .logo{
     float:left;
-    width: 100%;
+    width: 70%;
     height: 10%;
-    background: red;
+    margin-top: 1%;
+
     
 }
 .imgLogo{
@@ -27,42 +26,141 @@ main{
     float:left;
     width: 70%;
     height: auto;
-    background: orange;
 }
 
 .rectangulo{
-    float:right;
-    width: 30%;
-    height: auto;
-    background: yellow;
+    float: inherit;
+    background: var(--white, #FFF);
+    margin-top: 40px;
+    margin-left: 1000px;
+    height: 944px;
+    width: 400px;
+    border-radius: 32px;
+    background: var(--white, #FFF);
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    
 
 }
 
 
 .input-text{
     float: left;
+    display: flex;
     margin-left: 10%;
     margin-top: 90px;
-    width: 80%;
-    font-size: 20px;
+    width: 577px;
+    font-size: 32px;
+    font-style:normal;
+    font-weight: 400;
+    line-height: 150%;
     border: none;
     color: #0A3871;
     text-transform: lowercase;
-
+    font-family: Inter;
+    background:#F3F5FC
+    
 }
+
+.imgNoText{
+    float: top;
+    margin-top: 243px;
+    margin-left: 32px;
+}
+
+.mensajeNulo{
+    color: var(--gray-gray-500, #343A40);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+    width: 336px;
+    margin-left: 32px;
+}
+
+.ingreseTexto{
+    color: var(--gray-gray-400, #495057);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    width: 336px;
+    margin-left: 32px;
+}
+
+
 
 ::placeholder{color: #0A3871;}
 ::input-text:focus{outline: none;}
 
 .informacion{
-    float: left;
+    opacity: 0.8;
+    color: var(--gray-gray-400, #495057);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 1px;
 }
 
 .buttoms{
-    float:left;
-    margin-left: 20%;
-    margin-top: 40%;
-    height: auto;
-    background: pink;
+    width: auto;
+    float: left;
+    padding: 1px;
+    margin-top: -140px;
+    margin-left: 200px;
 }
 
+.encriptar{
+    border-radius: 24px;
+    background: var(--dark-blue-dark-blue-300, #0A3871);
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    float: inherit;
+    border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex: 1 0 0;
+}
+
+.desencriptar{
+    border-radius: 24px;
+    background:  #D8DFE8;;
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    float: inherit;
+    margin-left: 24px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
+    background: #D8DFE8;
+    color: var(--dark-blue-dark-blue-300, #0A3871);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+svg{
+    float: left;
+    margin-top: 1px;
+    margin-right: 8px;
+
+}
