@@ -6,7 +6,7 @@ body{
 
 main{
     width: 1440px;
-    height: 1024px;
+    height: 1200px;
     padding: 1px;
 }
 
@@ -46,10 +46,10 @@ main{
 
 .input-text{
     float: left;
-    display: flex;
-    margin-left: 10%;
-    margin-top: 90px;
-    width: 577px;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 700px;
+    height: 600px;
     font-size: 32px;
     font-style:normal;
     font-weight: 400;
@@ -58,14 +58,19 @@ main{
     color: #0A3871;
     text-transform: lowercase;
     font-family: Inter;
-    background:#F3F5FC
+    background:none;
+    resize: none; /* Evita que el usuario pueda cambiar el tamaño manualmente */
+    overflow: hidden; /* Oculta las barras de desplazamiento */
     
 }
+::placeholder{color: #0A3871;}
+::input-text:focus{outline: none; border: none;}
+
 
 .imgNoText{
     float: top;
     margin-top: 243px;
-    margin-left: 32px;
+    margin-left: 6%;
 }
 
 .mensajeNulo{
@@ -77,25 +82,26 @@ main{
     font-weight: 700;
     line-height: 120%; /* 28.8px */
     width: 336px;
-    margin-left: 32px;
+    margin-left: 6%;
 }
 
-.ingreseTexto{
+.outputTexto{
     color: var(--gray-gray-400, #495057);
     text-align: center;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 24px; /* 24px */
     width: 336px;
-    margin-left: 32px;
+    height: auto;
+    margin-left: 6%;
+    border: none;
+    resize: none; /* Evita que el usuario pueda cambiar el tamaño manualmente */
+    overflow: hidden; /* Oculta las barras de desplazamiento */
 }
 
 
-
-::placeholder{color: #0A3871;}
-::input-text:focus{outline: none;}
 
 .informacion{
     opacity: 0.8;
@@ -146,9 +152,7 @@ main{
     flex-shrink: 0;
     float: inherit;
     margin-left: 24px;
-    border-radius: 24px;
     border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
-    background: #D8DFE8;
     color: var(--dark-blue-dark-blue-300, #0A3871);
     text-align: center;
     font-family: Inter;
@@ -157,7 +161,24 @@ main{
     font-weight: 400;
     line-height: normal;
 }
+#copiar{
+    border-radius: 24px;
+    width: 40%;
+    padding: 24px;
+    margin-left: 28%;
+    margin-top: 30%;
+    height: 3%;
+    border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
+    background: #D8DFE8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: none;
 
+}
 svg{
     float: left;
     margin-top: 1px;

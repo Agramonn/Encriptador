@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge 1</title>
+    <title>Encriptador</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +18,15 @@
         </div>
 
         <div class="texto">
-            <textarea class="input-text" cols="30" rows="1" placeholder="Ingrese tu texto aqui."></textarea>
+            <textarea id="input"class="input-text"  placeholder="Ingrese tu texto aqui."></textarea>
 
         </div>
 
         <div class="rectangulo">
-            <img class="imgNoText" src="public/images/mueco.png" alt="muneco">
-            <h3 class="mensajeNulo">Ningun mensaje fue encontrado</h3>
-            <h6 class="ingreseTexto">Ingresa el texto que desees encriptar o desencriptar </h6>
+            <img id="muneco" class="imgNoText" src="public/images/mueco.png" alt="muneco">
+            <h3 class="mensajeNulo" id="noText">Ningun mensaje fue encontrado</h3>
+            <textarea class="outputTexto" id="output">Ingresa el texto que desees encriptar o desencriptar </textarea>
+            <buttom id="copiar" onclick="copiar()">Copiar!</buttom>
         </div>
        
         <div class="buttoms">
@@ -41,8 +43,8 @@
                 <h6 class="informacion">
                     Solo letras minuscula y sin acentos
                 </h6>
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
         </div>
        
     </main>
