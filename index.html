@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Challenge 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Encriptador..</h1>
-    </header>
-    <article>
-        <input type="text">
-        <input type="button" value="Enviar">
-    </article>
+   
+    <main>
+        <div class="logo">
+            <img class="imgLogo" src="public/images/logo.png" alt="aluraLogo">
+        </div>
+
+        <div class="texto">
+            <textarea class="input-text" cols="30" rows="1" placeholder="Ingrese tu texto aqui."></textarea>
+            <div>
+                <h6 class="informacion">
+                    Solo letras minuscula y sin acentos
+                </h6>
+            </div>
+
+        </div>
+
+        <div class="rectangulo">
+            <textarea name="texto" id="encriotado" cols="30" rows="10"></textarea>
+        </div>
+       
+         <div class="buttoms">
+                <button class="encriptar">Encriptar</button>
+                <button class="desemcriptar">Desencriptar</button>
+         </div>
+       
+    </main>
+
+
 </body>
 </html>

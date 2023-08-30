@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: green;
+}
+
+main{
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    padding: 5px;
+    background: blue;
+}
+
+.logo{
+    float:left;
+    width: 100%;
+    height: 10%;
+    background: red;
+    
+}
+.imgLogo{
+    float: inherit;
+}
+
+.texto{
+    float:left;
+    width: 70%;
+    height: auto;
+    background: orange;
+}
+
+.rectangulo{
+    float:right;
+    width: 30%;
+    height: auto;
+    background: yellow;
+
+}
+
+
+.input-text{
+    float: left;
+    margin-left: 10%;
+    margin-top: 90px;
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+
+}
+
+::placeholder{color: #0A3871;}
+::input-text:focus{outline: none;}
+
+.informacion{
+    float: left;
+}
+
+.buttoms{
+    float:left;
+    margin-left: 20%;
+    margin-top: 40%;
+    height: auto;
+    background: pink;
+}
+
